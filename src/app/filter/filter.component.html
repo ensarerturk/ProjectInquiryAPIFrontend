@@ -1,0 +1,57 @@
+<div>
+    <label for="filterOption">Filter Option:</label>
+    <select id="filterOption" [(ngModel)]="selectedFilterOption">
+        <option value="projectManager">Project Manager</option>
+        <option value="projectName">Project Name</option>
+        <option value="projectTopic">Project Topic</option>
+        <option value="projectStatus">Status</option>
+        <option value="within1Week">Within 1 Week</option>
+        <option value="within2Weeks">Within 2 Week</option>
+        <option value="within1Month">Within 1 Mounth</option>
+    </select>
+</div>
+
+<div *ngIf="selectedFilterOption === 'projectManager'">
+    <!-- Project Manager Filter -->
+    <label for="projectManagerFilter">Project Manager:</label>
+    <input type="text" id="projectManagerFilter" [(ngModel)]="filters.projectManager" name="projectManager">
+</div>
+
+<div *ngIf="selectedFilterOption === 'projectName'">
+    <!-- Project Name Filter -->
+    <label for="projectNameFilter">Project Name:</label>
+    <input type="text" id="projectNameFilter" [(ngModel)]="filters.projectName" name="projectName">
+</div>
+
+<div *ngIf="selectedFilterOption === 'projectTopic'">
+    <!-- Project Topic Filter -->
+    <label for="projectTopicFilter">Project Topic:</label>
+    <input type="text" id="projectTopicFilter" [(ngModel)]="filters.projectTopic" name="projectTopic">
+</div>
+
+<div *ngIf="selectedFilterOption === 'projectStatus'">
+    <!-- Project Status Filter -->
+    <label for="projectStatusFilter">Status:</label>
+    <input type="text" id="projectStatusFilter" [(ngModel)]="filters.projectStatus" name="projectStatus">
+</div>
+
+<button (click)="searchProjects()">Filter</button>
+
+<div class="homepage-button-yer">
+    <!-- Home Page Link -->
+    <a class="homepage-button" href="/">HomePage</a>
+</div>
+
+
+<div class="result-container" *ngFor="let project of filteredProjects">
+    <!-- Results -->
+    <div class="result-item">
+        <p>ID: {{ project.id }}</p>
+        <p>Project Name: {{ project.projectName }}</p>
+        <p>Porject Topic: {{ project.projectTopic }}</p>
+        <p>Porject Start Date: {{ project.projectStartDate | date }}</p>
+        <p>Porject End Date: {{ project.projectEndDate | date }}</p>
+        <p>Project Manager: {{ project.projectManager }}</p>
+        <p>Status: {{ project.projectStatus }}</p> 
+    </div>
+</div>

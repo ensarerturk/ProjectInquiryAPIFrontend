@@ -1,0 +1,24 @@
+<div class="project-details">
+    <h2>Project Details</h2>
+    <!-- Form for Project Details -->
+    <form (ngSubmit)="getProjectDetails()">
+      <label for="projectId">Project ID:</label>
+      <input type="number" id="projectId" name="projectId" [(ngModel)]="projectId" required>
+      <button type="submit">Bring Details</button>
+    </form>
+    
+    <!-- If Project Exists -->
+    <div *ngIf="project">
+      <h3>ID: {{ project.id }}</h3>
+      <p>Name: {{ project.projectName }}</p>
+      <p>Topic: {{ project.projectTopic }}</p>
+      <p>Start Date: {{ project.projectStartDate | date }}</p>
+      <p>End Date: {{ project.projectEndDate | date }}</p>
+      <p>Project Manager: {{ project.projectManager }}</p>
+      <p>Status: {{ project.projectStatus }}</p>
+    </div>
+
+    <div class="homepage-button-yer">
+        <a class="homepage-button" href="/">HomePage</a>
+    </div>
+  </div>

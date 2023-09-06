@@ -1,0 +1,67 @@
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+/* Filtrelenmiş projelerin stil */
+.result-container {
+    margin-top: 20px;
+}
+
+.result-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.result-item p {
+    margin: 5px 0;
+}
+
+/* Sonuçları liste olarak görüntüleme */
+div[ngFor] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.homepage-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.homepage-button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi */
+}
+
+/* Anasayfa düğmesi konumu */
+.homepage-button-yer {
+    margin-top: 20px; /* Düğmenin üst boşluğu */
+    text-align: center; /* Düğmeyi ortala */
+}

@@ -1,0 +1,66 @@
+<div class="container">
+    <h2>Create New Project</h2>
+    <!-- Project Creation Form -->
+    <form (ngSubmit)="createProject()" #projectForm="ngForm">
+      <div class="form-group">
+        <label for="projectName">Project Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="projectName"
+          name="projectName"
+          [(ngModel)]="newProject.projectName"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="projectTopic">Project Topic:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="projectTopic"
+          name="projectTopic"
+          [(ngModel)]="newProject.projectTopic"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="projectStartDate">Start Date:</label>
+        <input
+          type="date"
+          class="form-control"
+          id="projectStartDate"
+          name="projectStartDate"
+          [(ngModel)]="newProject.projectStartDate"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="projectEndDate">End Date:</label>
+        <input
+          type="date"
+          class="form-control"
+          id="projectEndDate"
+          name="projectEndDate"
+          [(ngModel)]="newProject.projectEndDate"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="projectManager">Project Manager:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="projectManager"
+          name="projectManager"
+          [(ngModel)]="newProject.projectManager"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Create Project</button>
+    </form>
+
+    <div class="homepage-button-yer">
+        <a class="homepage-button" href="/">HomePage</a>
+    </div>
+  </div>

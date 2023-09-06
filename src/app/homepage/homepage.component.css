@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #007BFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Ana sayfa stil ayarları */
+.homepage {
+    padding: 20px;
+    text-align: center;
+}
+
+.homepage h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.homepage p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.homepage ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.homepage li {
+    margin-bottom: 10px;
+}
+
+/* Düğme stil ayarları */
+.homepage-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.homepage-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.container-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.container-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.container-text ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.container-text li {
+    margin-bottom: 10px;
+}
+
+/* Düğme stil ayarları */
+.container-text-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container-text-button:hover {
+    background-color: #0056b3;
+}

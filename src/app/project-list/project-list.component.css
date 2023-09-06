@@ -1,0 +1,56 @@
+.project-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .homepage-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.homepage-button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengi */
+}
+
+/* Anasayfa düğmesi konumu */
+.homepage-button-yer {
+    margin-top: 20px; /* Düğmenin üst boşluğu */
+    text-align: center; /* Düğmeyi ortala */
+}

@@ -1,0 +1,31 @@
+<div class="project-list">
+  <h2>Projects</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Proje Name</th>
+        <th>Proje Topic</th>
+        <th>Project Start Date</th>
+        <th>Project End Date</th>
+        <th>Project Manager</th>
+        <th>Project Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- List of Projects -->
+      <tr *ngFor="let proje of projeler">
+        <td>{{ proje.id }}</td> 
+        <td>{{ proje.projectName }}</td>
+        <td>{{ proje.projectTopic }}</td>
+        <td>{{ proje.projectStartDate | date }}</td>
+        <td>{{ proje.projectEndDate | date }}</td>
+        <td>{{ proje.projectManager }}</td>
+        <td>{{ proje.projectStatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="homepage-button-yer">
+    <a class="homepage-button" href="/">HomePage</a>
+</div>
+</div>

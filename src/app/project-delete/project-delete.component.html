@@ -1,0 +1,16 @@
+<div class="project-delete">
+    <h2>Proje Sil</h2>
+    <form (submit)="deleteProject()">
+      <div class="form-group">
+        <label for="projectId">Project ID to be Deleted</label>
+        <input type="number" id="projectId" name="projectId" [(ngModel)]="projectId" required>
+      </div>
+      <button type="submit">Delete</button>
+      <div class="homepage-button-yer">
+        <a class="homepage-button" href="/">HomePage</a>
+    </div>
+    </form>
+    <div *ngIf="deleteSuccess" class="success-message">
+        The project was successfully deleted.
+    </div>
+  </div>
